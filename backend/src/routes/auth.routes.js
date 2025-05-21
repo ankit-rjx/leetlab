@@ -1,0 +1,17 @@
+import express from "express";
+import { authMiddleware } from "../middleware/auth.middleware.js"
+import {
+  check,
+  login,
+  logout,
+  register,
+} from "../controller/auth.controller.js";
+
+const authRoutes = express.Router();
+
+authRoutes.post("/register", register);
+authRoutes.post("/login", login);
+authRoutes.post("/logout", authMiddleware, logout);
+authRoutes.get("/check", authMiddleware, check);
+
+export default authRoutes;
