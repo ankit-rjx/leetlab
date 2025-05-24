@@ -1,0 +1,11 @@
+{
+  "name": "leetlab",
+  "version": "1.0.0",
+  "description": "A coding practice platform to solve DSA problems and level up your problem-solving skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankit Raj",
+  "license": "ISC"
+}
