@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "A coding practice platform to solve DSA problems and level up your problem-solving skills.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "author": "Ankit Raj",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
